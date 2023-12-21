@@ -4,8 +4,9 @@ import (
 	"fmt"
 )
 
-func yearsUntilEvents(age int) (int, int, int) {
+func yearsUntilEvents(age int) (yearsUntilAdult, yearsUntilDrinking, yearsUntilCarRental int) {
 	yearsUntilAdult = 18 - age
+	
 	if yearsUntilAdult < 0 {
 		yearsUntilAdult = 0
 	}
